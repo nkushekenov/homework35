@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% load custom_tags_filters %}
+
+    <h3>Примеры собственных фильтров:</h3>
+    <p>10 умножить на 2: {{ 10|multiply:2 }}</p>
+    <p>10 делить на 2: {{ 10|divide:2 }}</p>
+
+    <h3>Примеры собственных тегов:</h3>
+    <p>Текущее время: {% current_time "%Y-%m-%d %H:%M:%S" %}</p>
+    <p>{% greet "Ерканат" %}</p>
+</body>
+</html>
